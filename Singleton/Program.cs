@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Singleton
 {
-     class Program
+     public class Counter
     {
         //private int count=0;
 
@@ -25,8 +25,8 @@ namespace Singleton
             Console.Read();
         }
 
-        public class Counter
-        {
+       /* public class Counter
+        {*/
             private int count = 0;
             private static Counter instance = null;
             private Counter() { }
@@ -63,7 +63,7 @@ namespace Singleton
             }
             // Console.WriteLine("Counter Value", count);
 
-        }
+        //}
 
       
     }
