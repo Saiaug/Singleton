@@ -27,13 +27,17 @@ namespace Singleton
 
         public class Counter
         {
-           private  int count = 0;
-            private static Counter instance = new Counter();
+            private int count = 0;
+            private static Counter instance = null;
             private Counter() { }
 
             public static Counter Getinstance 
             {
                 get { 
+                    if (instance == null)
+                    {
+                        instance = new Counter();
+                    }
                     return instance; 
                 } 
             
