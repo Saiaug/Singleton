@@ -57,9 +57,11 @@ namespace Singleton
                 // Console.Write("Counter Value" +count.ToString());
             }
 
-            public void Display()
+            public int Display()
             {
+            
                 Console.WriteLine(count);
+                return count;
             }
             // Console.WriteLine("Counter Value", count);
 
